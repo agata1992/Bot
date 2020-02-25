@@ -15,7 +15,7 @@ $config = [
     'facebook_app_secret' => '1bbb590ce1d311c20bdf66b870b9867'
 ];
 
-function ask_age($title,$bot){
+function ask_age($title,$bot){ 
 	$error = 0;
 	$bot->ask($title,function(Answer $answer, $bot){
 		$age = $answer->getText();
